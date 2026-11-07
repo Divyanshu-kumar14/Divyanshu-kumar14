@@ -4,6 +4,7 @@
 //   node src/build.mjs signal --data f.json   -> render from saved data, no API call
 //   node src/build.mjs signal --save f.json   -> also save the fetched data
 
+import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -35,6 +36,23 @@ function buildStatic() {
   content.also.forEach((item, i) => write(path.join(out, 'also', `${item.repo}.svg`), chip(item, i)));
   write(path.join(out, 'footer.svg'), footerCard(content.footer));
   for (const l of content.links) write(path.join(out, 'links', `${l.id}.svg`), linkButton(l));
+  stampReadme();
+}
+
+// Browsers and GitHub cache images by URL, so an edited card can keep showing
+// the old version. Adding a content hash to each asset URL gives every change
+// a new URL.
+function stampReadme() {
+  const file = path.join(repoRoot, 'README.md');
+  const before = fs.readFileSync(file, 'utf8');
+  const after = before.replace(/src="(assets\/[^"?]+\.svg)(\?v=[0-9a-f]+)?"/g, (m, asset) => {
+    const svg = fs.readFileSync(path.join(repoRoot, asset));
+    return `src="${asset}?v=${createHash('sha256').update(svg).digest('hex').slice(0, 8)}"`;
+  });
+  if (after !== before) {
+    fs.writeFileSync(file, after);
+    console.log('README.md                            asset URLs updated');
+  }
 }
 
 async function buildSignal() {
@@ -42,8 +60,8 @@ async function buildSignal() {
   const data = dataFile
     ? { ...JSON.parse(fs.readFileSync(dataFile, 'utf8')), generatedAt: new Date().toISOString() }
     : await fetchProfile(process.env.PROFILE_USER || content.owner, process.env.GITHUB_TOKEN || process.env.GH_TOKEN, {
-        ignoredLanguages: content.ignoredLanguages,
-      });
+      ignoredLanguages: content.ignoredLanguages,
+    });
   const save = flag('--save');
   if (save) fs.writeFileSync(save, JSON.stringify(data, null, 2));
   const outDir = path.resolve(process.env.OUT_DIR || path.join(repoRoot, 'dist'));

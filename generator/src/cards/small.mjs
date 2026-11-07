@@ -81,9 +81,6 @@ export function footerCard(content) {
   const sub = doc.text(content.sub, { font: 'sans-400', size: 15, x: 136, y: 102, fill: C.muted });
   doc.add(`<g style="animation:rise 1s ${EASE} .1s both">${line.svg}</g>`);
   doc.add(`<g style="animation:rise 1s ${EASE} .22s both">${sub.svg}</g>`);
-  const a = doc.text('EVERY CARD ON THIS PAGE', { font: 'mono-500', size: 10, tracking: 0.16, x: W - 48, y: 70, anchor: 'end', fill: C.faint });
-  const b = doc.text('IS DRAWN BY generator/', { font: 'mono-500', size: 10, tracking: 0.16, x: W - 48, y: 88, anchor: 'end', fill: C.faint });
-  doc.add(`<g style="animation:fade 1s ease .5s both">${a.svg}${b.svg}</g>`);
   return doc.toString();
 }
 

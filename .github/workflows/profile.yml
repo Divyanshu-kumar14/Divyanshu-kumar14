@@ -1,0 +1,52 @@
+name: Redraw signal card
+
+on:
+  schedule:
+    - cron: "17 */12 * * *" # twice a day, off the top of the hour
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "generator/**"
+      - ".github/workflows/profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-signal
+  cancel-in-progress: true
+
+jobs:
+  signal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: generator
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: generator/package-lock.json
+
+      - run: npm ci
+
+      - name: Draw signal.svg from the GitHub API
+        run: node src/build.mjs signal
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OUT_DIR: ${{ github.workspace }}/dist
+
+      - name: Publish to the profile-output branch
+        uses: crazy-max/ghaction-github-pages@v5
+        with:
+          target_branch: profile-output
+          build_dir: dist
+          jekyll: false
+          commit_message: Redraw signal card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

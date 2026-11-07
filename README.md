@@ -1,54 +1,34 @@
-<h1 data-importer="text" align="center">Hey 👋What's Up?</h1>
+<!--
+  This profile is generated. Edit generator/src/content.mjs, then run
+  `npm ci && npm run build` inside generator/ and commit assets/.
+  The signal card is redrawn by .github/workflows/profile.yml every 12 hours.
+-->
 
-###
+<p align="center">
+  <img src="assets/hero.svg" width="100%" alt="DIVYANSHU. I write the part that checks the model's work: parity gates for COBOL ports, interlocks for ER discharges, frame-cited defect reports for substations, and sealed incidents for liquid-cooled racks.">
+</p>
 
-<div data-importer="techs" align="center">
-  <img src="https://skillicons.dev/icons?i=py" height="60" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="60" alt="numpy logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="60" alt="pandas logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" height="60" alt="tailwindcss logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="60" alt="react logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="60" alt="nextjs logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" height="60" alt="fastapi logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="60" alt="mysql logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="60" alt="postgresql logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="60" alt="linux logo"  />
-</div>
+<img src="assets/section-work.svg" width="100%" alt="01 Selected work">
 
-###
+<a href="https://github.com/Divyanshu-kumar14/mainframe-ghost"><img src="assets/work/mainframe-ghost.svg" width="100%" alt="mainframe-ghost: runs AI-ported COBOL against GnuCOBOL's own output inside a Kiro PreToolUse hook, and blocks the write if a single cent drifts."></a>
+<a href="https://github.com/Divyanshu-kumar14/CryoGuard-AI"><img src="assets/work/CryoGuard-AI.svg" width="100%" alt="CryoGuard-AI: leak detection for 100 kW liquid-cooled racks. A deterministic pipeline closes the valve and powers down the node; the model only writes the explanation afterwards."></a>
+<a href="https://github.com/Divyanshu-kumar14/SilentCatch"><img src="assets/work/SilentCatch.svg" width="100%" alt="SilentCatch: runs before the clinician clicks Sign and Discharge and flags what routine checks miss."></a>
+<a href="https://github.com/Divyanshu-kumar14/GridSight"><img src="assets/work/GridSight.svg" width="100%" alt="GridSight: turns drone footage of a substation into a severity-ranked defect list where every finding cites its frame."></a>
+<a href="https://github.com/Divyanshu-kumar14/SonarTrace"><img src="assets/work/SonarTrace.svg" width="100%" alt="SonarTrace: lets blind developers hear a Python program run."></a>
+<a href="https://github.com/Divyanshu-kumar14/Verdict-Pay"><img src="assets/work/Verdict-Pay.svg" width="100%" alt="Verdict-Pay: works out whether a PayPal dispute is worth fighting before the fee attaches, and builds a SHA-256-chained evidence dossier."></a>
 
-<div data-importer="socials" align="center">
-  <a href="https://dev.to/lazy_as_hell" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=dev.to&logo=dev.to&label=&color=0A0A0A&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="devto logo"  />
-  </a>
-</div>
+<img src="assets/section-also.svg" width="100%" alt="02 Also built">
 
-###
+<p align="center"><a href="https://github.com/Divyanshu-kumar14/CivicLens"><img src="assets/also/CivicLens.svg" width="211" alt="CivicLens: dashcams that file pothole tickets"></a><a href="https://github.com/Divyanshu-kumar14/DevSense"><img src="assets/also/DevSense.svg" width="211" alt="DevSense: voice-first CLI for blind developers"></a><a href="https://github.com/Divyanshu-kumar14/is-my-repo-compromised"><img src="assets/also/is-my-repo-compromised.svg" width="211" alt="is-my-repo-compromised: supply-chain IOC scanner"></a><a href="https://github.com/Divyanshu-kumar14/apogee"><img src="assets/also/apogee.svg" width="211" alt="apogee: ISS health and debris-risk dashboard"></a><a href="https://github.com/Divyanshu-kumar14/AOT-THEME"><img src="assets/also/AOT-THEME.svg" width="211" alt="AOT-THEME: Attack on Titan theme for Omarchy"></a><a href="https://github.com/Divyanshu-kumar14/antigravity-theme"><img src="assets/also/antigravity-theme.svg" width="211" alt="antigravity-theme: minimal theme for Omarchy"></a><a href="https://github.com/Divyanshu-kumar14/LofiGirl-CLI"><img src="assets/also/LofiGirl-CLI.svg" width="211" alt="LofiGirl-CLI: Lofi Girl radio in your terminal"></a><a href="https://github.com/Divyanshu-kumar14/Kazoe"><img src="assets/also/Kazoe.svg" width="211" alt="Kazoe: soroban mental-arithmetic trainer"></a></p>
 
-<div data-importer="profile-views" align="center">
-  <img data-importer="profile-views" src="https://visitor-badge.laobi.icu/badge?page_id=Divyanshu-kumar14.Divyanshu-kumar14&"  />
-</div>
+<img src="assets/section-signal.svg" width="100%" alt="03 Signal">
 
-###
+<img src="https://raw.githubusercontent.com/Divyanshu-kumar14/Divyanshu-kumar14/profile-output/signal.svg" width="100%" alt="A year of contributions drawn as an isometric voxel field, with the yearly total, commits, pull requests, longest streak, busiest weekday and languages by bytes.">
 
-<div data-importer="stats" align="center">
-  <img src="https://raw.githubusercontent.com/Divyanshu-kumar14/Divyanshu-kumar14/stats-output/stats.svg?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=false&order=1&custom_title=Github%20Stats" height="150" alt="stats graph"  />
-  <img src="https://raw.githubusercontent.com/Divyanshu-kumar14/Divyanshu-kumar14/languages-output/languages.svg?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dark&hide_border=false&order=2" height="150" alt="languages graph"  />
-</div>
+<img src="assets/footer.svg" width="100%" alt="Bring me a cup of coffee. Writing at dev.to/lazy_as_hell">
 
-###
-
-<img data-importer="snake" src="https://raw.githubusercontent.com/Divyanshu-kumar14/Divyanshu-kumar14/snake-output/snake.svg" alt="Snake animation" />
-
-###
+<p align="center">
+  <a href="https://dev.to/lazy_as_hell"><img src="assets/links/devto.svg" height="40" alt="dev.to"></a>
+  <a href="mailto:divyanshukumar0014@gmail.com"><img src="assets/links/email.svg" height="40" alt="Email"></a>
+  <a href="https://github.com/Divyanshu-kumar14?tab=repositories"><img src="assets/links/repos.svg" height="40" alt="All repositories"></a>
+</p>

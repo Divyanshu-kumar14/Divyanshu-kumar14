@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="97" height="40" viewBox="0 0 97 40" role="img" aria-labelledby="title desc">
+<title id="title">EMAIL</title>
+<desc id="desc">Open email</desc>
+<style>@keyframes fade{from{opacity:0}}@keyframes rise{from{opacity:0;transform:translateY(12px)}}@keyframes slide{from{opacity:0;transform:translateX(-14px)}}@keyframes drawx{from{transform:scaleX(0)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<defs><path id="m6_32" d="M524 0L83 0L83 -698L524 -698L524 -590L214 -590L214 -408L513 -408L513 -300L214 -300L214 -108L524 -108L524 0Z"/><path id="m6_40" d="M438 0L438 -323L444 -525L435 -525L300 -166L165 -525L156 -525L162 -323L162 0L48 0L48 -698L204 -698L301 -441L308 -441L406 -698L552 -698L552 0L438 0Z"/><path id="m6_28" d="M588 0L449 0L400 -177L193 -177L145 0L13 0L209 -698L391 -698L588 0ZM378 -284L301 -569L293 -569L216 -284L378 -284Z"/><path id="m6_36" d="M522 0L78 0L78 -98L235 -98L235 -600L78 -600L78 -698L522 -698L522 -600L365 -600L365 -98L522 -98L522 0Z"/><path id="m6_39" d="M540 0L100 0L100 -698L231 -698L231 -108L540 -108L540 0Z"/></defs>
+<rect x=".5" y=".5" width="96" height="39" rx="8" fill="#0b0f0c" stroke="#1c2620"/>
+<g transform="translate(20 24) scale(0.011)" fill="#e7ede8"><use href="#m6_32" x="0"/><use href="#m6_40" x="760"/><use href="#m6_28" x="1520"/><use href="#m6_36" x="2280"/><use href="#m6_39" x="3040"/></g>
+<path d="M72.04 23L80.04 15M74.44 15H80.04V20.6" fill="none" stroke="#45c247" stroke-width="1.4"/>
+</svg>

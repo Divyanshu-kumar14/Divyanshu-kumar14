@@ -1,0 +1,19 @@
+{
+  "name": "profile-generator",
+  "private": true,
+  "type": "module",
+  "description": "Builds the animated SVGs for the Divyanshu-kumar14 profile README.",
+  "scripts": {
+    "build": "node src/build.mjs static",
+    "signal": "node src/build.mjs signal",
+    "all": "node src/build.mjs static signal"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "5.3.0",
+    "@fontsource/ibm-plex-sans": "5.3.0",
+    "opentype.js": "2.0.0"
+  }
+}
